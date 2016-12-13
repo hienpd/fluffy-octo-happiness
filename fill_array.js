@@ -9,13 +9,15 @@ function fillArray(n) {
 
 let fullArr = fillArray(25);
 
-function oddsOnly(element) {
-  if(element % 2 === 0) {
-    return false;
-  }
-  else {
-    return true;
-  }
+function isOdd(element) {
+  // if(element % 2 === 0) {
+  //   return false;
+  // }
+  // else {
+  //   return true;
+  // }
+
+  return element % 2;
 }
 
-console.log(fullArr.filter(oddsOnly));
+console.log(fullArr.filter(isOdd));
